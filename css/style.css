@@ -1,0 +1,210 @@
+/*Defult Css */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body{
+	font-family: 'Josefin Sans', sans-serif;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+a, a:hover{
+	text-decoration: none;
+}
+input, button{
+	outline: none;
+}
+img{
+	max-width: 100%;
+}
+.container{
+	width: 1170px;
+	margin: auto;
+	overflow: hidden;
+	clear: both;
+}
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+.col-3{
+	width: 25%;
+}
+.col-4{
+	width: 33.33%;
+}
+.col-8{
+	width: 66.66%;
+}
+
+
+/*Header Style */
+header {
+	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/Rabbi_hosaisn.png); 
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+header .logo {}
+header .logo img{
+}
+header nav{}
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    justify-content: flex-end;
+}
+header nav ul li {
+}
+header nav ul li a{
+    display: block;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.4s;
+    border-radius: 3px;
+}
+header nav ul li a:hover{
+    background: #2ABD51;
+}
+.intro {
+    padding: 200px 0;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 50px;
+    color: #3C55CF;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    color: #ddd;
+    font-size: 20px;
+    line-height: 1.5;
+}
+/*Work Section Style */
+.work-section {
+    padding: 100px 0;
+}
+.work-section .heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.work-section .heading h1{
+    position: relative;
+    font-size: 40px;
+    color: #2CBB51;
+}
+.work-section .heading h1:after {content: "";position: absolute;top: 100%;left: 50%;background: #3C55CF;height: 3px;width: 400px;transform: translateX(-50%);}
+.work-section .work {
+    margin: 20px;
+    padding: 20px 10px;
+    border: 1px solid #eee;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.work-section .work:hover {
+    box-shadow: 0px 10px 15px #8a8888;
+}
+.work-section .work h2{
+    margin-bottom: 10px;
+    color: #333;
+}
+.work-section .work img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+}
+.work-section .work p{
+    margin-bottom: 15px;
+    color: #333;
+}
+.work-section .work .view-btn{
+    text-align: right;
+}
+.work-section .work .view-btn a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #3C55CF;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 3px;
+}
+.work-section .work .view-btn a:hover{}
+
+
+/*Footer Section Style */
+footer {
+    padding-top: 100px;
+    background: #2CBB51;
+    color: #333;
+}
+.footer-widget {
+    margin-bottom: 30px;
+}
+.footer-widget h2{
+    margin-bottom: 15px;
+    padding: 3px 10px;
+    border-left: 3px solid #3C55CF;
+}
+.footer-widget p{
+    margin-right: 30px;
+}
+.footer-widget ul li{}
+.footer-widget ul li a{}
+.footer-widget ul li a{
+    font-size: 18px;
+    color: #3C55CF;
+    display: block;
+    padding: 8px 0;
+    transition: 0.3s;
+}
+.footer-widget .social-icons {}
+.footer-widget .social-icons a{}
+.footer-widget .social-icons a i{}
+.footer-widget form {
+    margin: 20px 0;
+    position: relative;
+}
+.footer-widget form input{
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+.footer-widget form button{
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.footer-botton {
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
