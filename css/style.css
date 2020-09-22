@@ -173,7 +173,18 @@ footer {
 }
 .footer-widget .social-icons {}
 .footer-widget .social-icons a{}
-.footer-widget .social-icons a i{}
+.footer-widget .social-icons a i {
+    margin: 5px;
+    color: #Fff;
+    background: #3c55cf;
+    padding: 10px;
+    display: inline-block;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+.footer-widget .social-icons a i:hover {
+    background: #6a78bd;
+}
 .footer-widget form {
     margin: 20px 0;
     position: relative;
