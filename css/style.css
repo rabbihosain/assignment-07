@@ -1,68 +1,70 @@
 /*Defult Css */
 *{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 body{
-	font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 ul{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 ul li{
-	list-style: none;
+    list-style: none;
 }
 a, a:hover{
-	text-decoration: none;
+    text-decoration: none;
 }
 input, button{
-	outline: none;
+    outline: none;
 }
 img{
-	max-width: 100%;
+    max-width: 100%;
 }
 .container{
-	width: 1170px;
-	margin: auto;
-	overflow: hidden;
-	clear: both;
+    width: 1170px;
+    margin: auto;
+    overflow: hidden;
+    clear: both;
 }
 .flex{
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 .col-3{
-	width: 25%;
+    width: 25%;
 }
 .col-4{
-	width: 33.33%;
+    width: 33.33%;
 }
 .col-8{
-	width: 66.66%;
+    width: 66.66%;
 }
 
 
 /*Header Style */
 header {
-	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/Rabbi_hosaisn.png); 
-	background-size: cover;
-	background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/laptop.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-header .logo {}
-header .logo img{
+header .flex{
+    align-items: center;
 }
-header nav{}
+header .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
 header nav ul{
     display: flex;
     flex-wrap: wrap;
     margin: 20px 0;
     justify-content: flex-end;
-}
-header nav ul li {
 }
 header nav ul li a{
     display: block;
@@ -74,7 +76,7 @@ header nav ul li a{
     border-radius: 3px;
 }
 header nav ul li a:hover{
-    background: #2ABD51;
+    background: #898b90;
 }
 .intro {
     padding: 200px 0;
@@ -83,7 +85,7 @@ header nav ul li a:hover{
 
 .intro h1 {
     font-size: 50px;
-    color: #3C55CF;
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -95,7 +97,7 @@ header nav ul li a:hover{
 /*Work Section Style */
 .work-section {
     padding: 100px 0;
-background: #f5f5f5;
+    background: #d6d1d1;
 }
 .work-section .heading {
     text-align: center;
@@ -104,19 +106,19 @@ background: #f5f5f5;
 .work-section .heading h1{
     position: relative;
     font-size: 40px;
-    color: #2CBB51;
+    color: #333;
 }
-.work-section .heading h1:after {content: "";position: absolute;top: 100%;left: 50%;background: #3C55CF;height: 3px;width: 400px;transform: translateX(-50%);}
+.work-section .heading h1:after {content: "";position: absolute;top: 100%;left: 50%;background: #333;height: 3px;width: 400px;transform: translateX(-50%);}
 .work-section .work {
     margin: 20px;
     padding: 20px 10px;
     border: 1px solid #eee;
     transition: 0.5s;
     border-radius: 5px;
-	background: #fff;
+    background: #fff;
 }
 .work-section .work:hover {
-    box-shadow: 0px 10px 15px #8a8888;
+    box-shadow: 0px 5px 15px #8a8888;
 }
 .work-section .work h2{
     margin-bottom: 10px;
@@ -139,19 +141,22 @@ background: #f5f5f5;
 .work-section .work .view-btn a{
     display: inline-block;
     padding: 10px 20px;
-    background: #3C55CF;
+    background: #898b90;
     color: #fff;
     font-size: 20px;
     border-radius: 3px;
+    transition: 0.3s;
 }
-.work-section .work .view-btn a:hover{}
+.work-section .work .view-btn a:hover{
+    background: #4d4e50;
+}
 
 
 /*Footer Section Style */
 footer {
     padding-top: 100px;
-    background: #2CBB51;
-    color: #333;
+    background: #666;
+    color: #fff;
 }
 .footer-widget {
     margin-bottom: 30px;
@@ -159,33 +164,35 @@ footer {
 .footer-widget h2{
     margin-bottom: 15px;
     padding: 3px 10px;
-    border-left: 3px solid #3C55CF;
+    border-left: 3px solid #fff;
 }
 .footer-widget p{
     margin-right: 30px;
+    line-height: 1.4;
 }
-.footer-widget ul li{}
-.footer-widget ul li a{}
 .footer-widget ul li a{
     font-size: 18px;
-    color: #3C55CF;
+    color: #fff;
     display: block;
     padding: 8px 0;
     transition: 0.3s;
 }
-.footer-widget .social-icons {}
-.footer-widget .social-icons a{}
+.footer-widget ul li a:hover{
+    color: #161E2B;
+}
 .footer-widget .social-icons a i {
-    margin: 5px;
+    margin-right:10px;
     color: #Fff;
-    background: #3c55cf;
+    background: #333;
     padding: 10px;
     display: inline-block;
     transition: 0.3s;
     border-radius: 50%;
+    border: 1px solid #333;
 }
 .footer-widget .social-icons a i:hover {
-    background: #6a78bd;
+    background: #fff;
+    color: #333;
 }
 .footer-widget form {
     margin: 20px 0;
@@ -207,7 +214,6 @@ footer {
     text-align: center;
     border-top: 1px solid #555;
 }
-
 
 
 
