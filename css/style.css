@@ -54,12 +54,19 @@ img{
 
 /*Header Style */
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/laptop.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 5
 }
 header .flex{
     align-items: center;
+}
+header.sticky {
+    position: sticky;
+    top: 0;
+    background: #008aff;
 }
 header .logo img {
     width: 50px;
@@ -85,6 +92,9 @@ header nav ul li a:hover{
     background: #898b90;
 }
 .intro {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/laptop.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 200px 0;
     text-align: center;
 }
